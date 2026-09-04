@@ -1,55 +1,58 @@
-# Prerequisites
-*.d
-
-# Object files
+# Build artifacts
+build/
 *.o
-*.ko
-*.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
 *.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
 *.so
-*.so.*
-*.dylib
+*.elf
+*.bin
+*.iso
+*.img
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+# Object and dependency files
+*.d
+*.pyc
+*.pyo
+__pycache__/
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# Build output
+bin/
+lib/
+dist/
 
-# debug information files
-*.dwo
+# Logs
+*.log
+logs/
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+CMakeUserPresets.json
+cmake_install.cmake
+
+# QEMU
+*.pid
+*.sock
+qemu.log
+
+# Generated files
+kernel/src/**/*.o
+boot/**/*.o
+*.sym
+syscall_table.c
+
+# Temporary
+*.tmp
+*.bak
+
+# Documentation
+.build/
+_build/
+*.pdf

@@ -1,0 +1,13 @@
+# GDB initialization script for kernel debugging
+
+# Connect to QEMU stub
+target remote localhost:1234
+
+# Load kernel symbols
+file ./build/bin/hybrid-os.elf
+
+# Set breakpoint at kernel main
+break kernel_main
+
+# Continue
+c
